@@ -1,0 +1,23 @@
+{
+  "dresses": [
+    {
+      "id": "3",
+      "category": "Onepis",
+      "color": "Maroon"
+    }
+  ],
+  "makeups": [
+    {
+      "id": "1",
+      "item": "lipstick"
+    },
+    {
+      "id": "3",
+      "item": "mascarra"
+    },
+    {
+      "id": "4",
+      "item": "blusher"
+    }
+  ]
+}
