@@ -1,9 +1,14 @@
 {
   "dresses": [
     {
-      "id": "3",
-      "category": "Onepis",
-      "color": "Maroon"
+      "num": 1,
+      "color": "blue",
+      "type": "top"
+    },
+    {
+      "num": 2,
+      "color": "white",
+      "type": "crop-top"
     }
   ],
   "makeups": [
@@ -16,7 +21,15 @@
       "item": "mascarra"
     },
     {
-      "id": "4",
+      "id": "6",
+      "item": "eyeliner"
+    },
+    {
+      "id": "7",
+      "item": "blusher"
+    },
+    {
+      "id": "7",
       "item": "blusher"
     }
   ]
