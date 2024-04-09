@@ -1,7 +1,7 @@
 import requests
 import json
 
-def get_all_dress():
+def get_all_dresses():
     URL="http://localhost:3000/dresses"
     response=requests.get(URL)
     data=response.json()
@@ -13,7 +13,6 @@ def get_all_dress():
         print("color=",color)
         print("type=",type)
 
-
 def get_all_makeups():
     URL="http://localhost:3000/makeups"
     response=requests.get(URL)
@@ -24,20 +23,17 @@ def get_all_makeups():
         print("id=",id)
         print("items=",items)
 
-
 def delete_dresses():
      num=int(input("enter the number for delete dresses:"))
      URL=f"http://localhost:3000/dresses/{num}"
      response=requests.delete(URL)
      print(response)
 
-
 def delete_makeup():
      num=int(input("enter the number for delete makeup:"))
      URL=f"http://localhost:3000/makeups/{num}"
      response=requests.delete(URL)
      print(response)
-
 
 def insert_makeup():
      print
@@ -58,9 +54,7 @@ def insert_makeup():
      response=requests.post(URL,json_data)
      print(response.text)
 
-
-def insert_dresses():
-     
+def insert_dresses(): 
      URL="http://localhost:3000/dresses"
      data={ 
             "num":2,
@@ -72,13 +66,11 @@ def insert_dresses():
      print(response)
      print(response.text)
 
-
-
-print("1.Get_all_dresses\n2.get_all_makeups\n3.delete_dresses\n4.delete_makeup\n5.insert_dresses\n6.insert_makeup")
+print("1.get_all_dresses\n2.get_all_makeups\n3.delete_dresses\n4.delete_makeup\n5.insert_dresses\n6.insert_makeup")
 ch=int(input("enter the number"))
 
 if ch==1:
-     get_all_dress()
+     get_all_dresses()
 elif ch==2:
      get_all_makeups()
 elif ch==3:
@@ -90,6 +82,4 @@ elif ch==5:
 elif ch==6:
      insert_makeup()
 else:
-     ("Invalid your choices")
-
-     
+     ("Invalid your choices:-")
